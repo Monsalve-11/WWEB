@@ -5,6 +5,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "./firebaseConfig";
+import { collection, addDoc } from 'firebase/firestore';
 
 const Login = () => {
   const [email, setEmail] = useState("");
