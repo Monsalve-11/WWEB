@@ -5,6 +5,8 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'fire
 import { auth, db } from '../firebaseConfig';  // Asegúrate de importar db de firebaseConfig
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
+
+
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -56,6 +58,7 @@ export default function Login() {
       Alert.alert('Error al iniciar sesión', error.message);
     }
   };
+  
 
   return (
     <View style={styles.container}>
